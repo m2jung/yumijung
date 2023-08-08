@@ -5,13 +5,82 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
+  width: 100vw;
+  height: 100vh;
+  min-width: 545px;
+  background: linear-gradient(
       20deg,
-      rgba(23, 216, 178, 0.3),
+      #8395FF,
       rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(150deg, rgba(247, 255, 92, 0.3), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(330deg, rgba(83, 9, 71, 0.3), rgba(0, 0, 255, 0) 70.71%);
+      ),
+      linear-gradient(150deg, rgba(247, 255, 92, 0.3), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(330deg, #FF5FFF, rgba(0, 0, 255, 0) 70.71%);
+  }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateX(-3.0rem);
+  transition: transform 1s, opacity 1s, transform 1s;
+  /* 페이지에 항상 고정 */
+  position: fixed;
+  z-index: 1000; 
 }
+
+nav.show {
+  opacity: 1;
+  transform: translateX(10px);
+}
+.wrapper {
+  padding: 30px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  width: 50px;
+  height: 60px;    
+}
+.menu li:hover {
+  font-weight: bold;
+}
+
+.menu a {
+  font-size: 17px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.6);
+  border-radius: 6px;
+}
+
+.container {
+  width: 900px;
+  height: 700px;
+  margin: 0.5rem 10% auto auto; 
+  border: 1px solid black;
+  opacity: 0;
+  transform: translateX(350px);
+  transition: transform 1s, opacity 1s, transform 1s;
+}
+.container.show {
+  opacity: 1;
+  transform: translateX(50px);
+}
+
+/* 기본 스타일 */
+/* .some-element {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+} */
+
+/* 화면 너비가 600px 이하일 때의 스타일 조정
+@media (max-width: 540px) {
+  .some-element {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+  }
+} */
