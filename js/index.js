@@ -8,7 +8,7 @@ const pageMove = document.getElementsByClassName("page-move");
 let currentIndex = 0;
 
 function typeNextCharacter() {
-  typingElement.textContent = text.slice(0, currentIndex + 1); // text 하나씩 쪼개기
+  typingElement.innerText = text.slice(0, currentIndex + 1); // text 하나씩 쪼개기
   currentIndex++; // index 세기
 
   if (currentIndex < text.length) {
