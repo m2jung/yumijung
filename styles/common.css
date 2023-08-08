@@ -61,7 +61,7 @@ nav.show {
   margin: 0.5rem 10% auto auto; 
   border: 1px solid black;
   opacity: 0;
-  transform: translateX(350px);
+  transform: translateX(300px);
   transition: transform 1s, opacity 1s, transform 1s;
 }
 .container.show {
