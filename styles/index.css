@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+	font-size: 3rem;
+    /* background:linear-gradient(#89f0fd, #ffcef2, #e8b2ff );
+    background-clip: text;
+    -webkit-background-clip: text; */
+    color: rgb(52, 52, 52);
+    text-shadow: 3px 3px 10px white;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 0.5s ease-in;
+}
+
+.container {
+	position: relative;
+	z-index: 0;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    height: 50px;
+	overflow: hidden;
+}
+
+.pulse {
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 30rem;
+}	
+
+.start-container {
+    width: 100px;
+    height: 40px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #a0a5bc;
+    font-size: 10px;
+    color: #a0a5bc;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.start-container:hover {
+    background-color: #323c65;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.start-text {
+    font-size: 14px;
+}
+.fa-arrow-right {
+    color: #a0a5bc;
+}
+
+
+circle {
+    fill:  #a9ffc9;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 50% 50%;
+    animation: pulse 1.5s cubic-bezier(.5,.5,0,1);
+}
+circle:nth-child(2) {
+    fill: #eeff8d;
+    animation: pulse 1.5s 0.75s cubic-bezier(.5,.5,0,1);
+}
+
+circle:nth-child(3) {
+    fill: #f7b263;
+    animation: pulse 1.5s 1.5s cubic-bezier(.5,.5,0,1);
+}
+    
+
+
+@keyframes pulse {
+	25% {
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1);
+	}
+	
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
