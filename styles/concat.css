@@ -3,6 +3,7 @@ h1 {
     font-family: 'Alice', serif;
     margin-bottom: 65px;
 }
+
 i {
     margin-right: 3px;
 }
@@ -49,7 +50,7 @@ button i:hover {
     height: 100px;
     margin: 20px;
     border-radius: 50px;
-    background-image: url('/images/profile-image.JPG');
+    background-image: url('../images/profile-image.JPG');
     background-position: center;
     background-size: cover;
 
