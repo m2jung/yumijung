@@ -4,8 +4,8 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 545px;
-  font-family: Poppins;
   display: grid;
+  padding: 40px;
 }
 
 .gallery {

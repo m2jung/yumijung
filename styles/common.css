@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 545px;
+  
   /* background: linear-gradient(
       20deg,
       #8395FF,
@@ -100,3 +101,10 @@ nav.show {
       background-color: red;
   }
 } */
+
+@media (min-width: 600px) {
+  body {
+      padding: 40px;
+  }
+  
+}
