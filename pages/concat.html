@@ -4,26 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/common.css">
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/concat.css">
     <title>유미정 입니다.</title>
 </head>
 <body>
 <div class="wrapper">
     <nav>
         <ul class="menu">
-            <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./project.html">Project</a></li>
             <li><a href="./concat.html">Contact</a></li>
         </ul>
     </nav>
     <div class="container">
-        
+        <div class="container-content">
+            <h1>Concat</h1>
+            <div class="content-profile">
+                <div class="profile-img"></div>
+                <div class="profile-info">
+                  <i class="far fa-envelope"></i>119755@naver.com
+                  <div class="profile-sns">
+                      <a href="https://github.com/m2jung" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+                      <a href="https://zamizami.tistory.com/" target="_blank"><i class="fas fa-tenge"></i>Tistory</a>
+                    </div>
+                </div>
+            </div>
+            <form>
+            <div class="input-wrapper">
+                <input autocomplete="off" class="input" type="text" id="name" placeholder="Name" />
+                <label class="label" for="name">
+                  Name
+                </label>
+                <button class="clear" aria-label="Clear input">
+                  <svg viewBox="0 0 16 16" width="12" height="12">
+                    <path d="M 1 1 L 15 15 M 1 15 L 15 1" fill="none" stroke-width="2" stroke="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="input-wrapper">
+                <input autocomplete="off" class="input" type="email" id="email" placeholder="Email" />
+                <label class="label" for="email">
+                  Email
+                </label>
+                <button class="clear" aria-label="Clear input">
+                  <svg viewBox="0 0 16 16" width="12" height="12">
+                    <path d="M 1 1 L 15 15 M 1 15 L 15 1" fill="none" stroke-width="2" stroke="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <button><i class="fas fa-heart"></i></button>
+            </form>
+        </div>
+
     </div>
 
 </div>
 <!-- script-->
     <script src="https://kit.fontawesome.com/79da796ef8.js" crossorigin="anonymous"></script>
-    <script src="./js/home.js"></script>
+    <script src="/js/pageMove.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ const typeNextCharacter = () => {
 // ** 클릭 작동이 한 번에 안되는 경우가 있음
 const onClickBtn = () => {
     wrapper.style.opacity = 0;
-    setTimeout("location.href = 'pages/home.html'", 1000);
+    setTimeout("location.href = './pages/about.html'", 1500);
 }
 
 typeNextCharacter();

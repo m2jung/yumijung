@@ -11,6 +11,17 @@ body {
     width: 100vw;
     height: 100vh;
     min-width: 545px;
+    /* background: linear-gradient(
+        20deg,
+        #8395FF,
+        rgba(255, 0, 0, 0) 70.71%
+        ),
+        linear-gradient(150deg, rgba(247, 255, 92, 0.3), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(330deg, #FF5FFF, rgba(0, 0, 255, 0) 70.71%); */
+    }
+h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 3rem;
     background: linear-gradient(
         20deg,
         #8395FF,
@@ -18,16 +29,11 @@ body {
         ),
         linear-gradient(150deg, rgba(247, 255, 92, 0.3), rgba(0, 255, 0, 0) 70.71%),
         linear-gradient(330deg, #FF5FFF, rgba(0, 0, 255, 0) 70.71%);
-    }
-h1 {
-    font-family: 'Lobster Two', cursive;
-    font-size: 3rem;
-    /* background:linear-gradient(#89f0fd, #ffcef2, #e8b2ff );
     background-clip: text;
-    -webkit-background-clip: text; */
-    color: rgb(52, 52, 52);
-    text-shadow: 3px 3px 10px white;
+    -webkit-background-clip: text; 
+    color: transparent; /* 텍스트 자체는 투명하게 */
 }
+    
     .wrapper {
     width: 100vw;
     height: 100vh;
@@ -62,15 +68,15 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid rgba(0,0,0,0.3);
     font-size: 10px;
-    color: white;
+    color: rgba(0,0,0,0.3);
     opacity: 0;
     transition: opacity 1s ease-in;
 }
 .start-container:hover {
     background-color: white;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     color: rgba(0,0,0,0.7);
     cursor: pointer;
 }

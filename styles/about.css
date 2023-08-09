@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Noto+Serif+KR&family=Sawarabi+Mincho&display=swap');
+
+h1 {
+    font-size: 45px;
+    font-family: 'Alice', serif;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin-bottom: 20px;
+}
+
+p {
+    width: 480px;
+    font-size: 15px;
+    font-weight: 340;
+    line-height: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+table {
+    width: 750px;
+}
+
+tbody {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+th {
+    font-family: 'Alice', serif;
+    font-size: 30px;
+    height: 100px;
+}
+
+tr {
+    height: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    padding: 30px;
+}
+
+.profile:first-child {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.profile-content {
+    width: 300px;
+    height: 200px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    box-shadow: 2px 2px 5px lightgray;
+    background-image: url('../images/profile-image.JPG');
+    background-position: center;
+    background-size: cover;
+}
+
+.table-responsive {
+    margin: 0px 0px 30px;
+}

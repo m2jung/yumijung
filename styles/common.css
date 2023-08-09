@@ -8,21 +8,26 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 545px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       20deg,
       #8395FF,
       rgba(255, 0, 0, 0) 70.71%
       ),
       linear-gradient(150deg, rgba(247, 255, 92, 0.3), rgba(0, 255, 0, 0) 70.71%),
-      linear-gradient(330deg, #FF5FFF, rgba(0, 0, 255, 0) 70.71%);
+      linear-gradient(330deg, #FF5FFF, rgba(0, 0, 255, 0) 70.71%); */
   }
+
+a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
 
 nav {
   display: flex;
   flex-direction: column;
   opacity: 0;
   transform: translateX(-3.0rem);
-  transition: transform 1s, opacity 1s, transform 1s;
+  transition: transform 0.8s, opacity 0.8s, transform 0.8s;
   /* 페이지에 항상 고정 */
   position: fixed;
   z-index: 1000; 
@@ -57,17 +62,27 @@ nav.show {
 
 .container {
   width: 900px;
-  height: 700px;
+  height: auto;
   margin: 0.5rem 10% auto auto; 
-  border: 1px solid black;
   opacity: 0;
-  transform: translateX(300px);
-  transition: transform 1s, opacity 1s, transform 1s;
+  transform: translateX(350px);
+  transition: transform 0.6s, opacity 0.6s, transform 0.6s;
 }
 .container.show {
   opacity: 1;
   transform: translateX(50px);
 }
+
+/* 두근두근 애니메이션 */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 
 /* 기본 스타일 */
 /* .some-element {
