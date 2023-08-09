@@ -26,7 +26,7 @@ nav {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  transform: translateX(-3.0rem);
+  transform: translateX(-5.0rem);
   transition: transform 0.8s, opacity 0.8s, transform 0.8s;
   /* 페이지에 항상 고정 */
   position: fixed;
@@ -37,6 +37,7 @@ nav.show {
   opacity: 1;
   transform: translateX(10px);
 }
+
 .wrapper {
   padding: 30px;
 }
@@ -70,7 +71,7 @@ nav.show {
 }
 .container.show {
   opacity: 1;
-  transform: translateX(50px);
+  transform: translateX(10px);
 }
 
 /* 두근두근 애니메이션 */

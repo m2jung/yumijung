@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 body {
     width: 100vw;
     height: 100vh;
@@ -34,7 +27,7 @@ h1 {
     color: transparent; /* 텍스트 자체는 투명하게 */
 }
     
-    .wrapper {
+.wrapper {
     width: 100vw;
     height: 100vh;
     transition: opacity 0.5s ease-in;
